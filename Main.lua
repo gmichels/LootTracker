@@ -70,6 +70,9 @@ Plugins.LootTracker.Load = function ()
     if windowState.left and windowState.top then
         lootWindow:SetPosition(windowState.left, windowState.top);
     end
+    if windowState.qualityFilter then
+        lootWindow:RestoreQualityFilter(windowState.qualityFilter);
+    end
     if characterName then
         lootWindow:SetCharacterName(characterName);
     end
@@ -84,6 +87,7 @@ Plugins.LootTracker.Unload = function ()
     Turbine.PluginData.Save(Turbine.DataScope.Character, windowKey, {
         left = lootWindow:GetLeft(),
         top = lootWindow:GetTop(),
+        qualityFilter = lootWindow:GetQualityFilter(),
     });
     currentCharacterName = nil;
 end
