@@ -2,18 +2,18 @@
 <Plugin>
 	<Information>
 		<Name>LootTracker</Name>
-		<Author>João Neto</Author>
-		<Version>0.1.2</Version>
+		<Author>gm</Author>
+		<Version>0.2.0</Version>
 		<Description>LootTracker
 
-LootTracker is a fellowship loot track, it shows all itens obtained by loot players.
+LootTracker is a self/fellowship loot track, it shows all loot items obtained by players.
 
 Commands:
     /lt - Open LootTracker window
 
 More information:
 
-https://github.com/joaoneto/LootTracker
+https://github.com/gmichels/LootTracker
 
 </Description>
 		<Image>LootTracker/Resources/logo.tga</Image>
